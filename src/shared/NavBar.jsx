@@ -14,16 +14,16 @@ const NavBar = () => {
     }
     const navLinks = <>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:bg-green-300 p-2 rounded-lg" : ""} to="/">Home</NavLink></li>
+            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/">Home</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:bg-green-300 p-2 rounded-lg" : ""} to="/addproduct">Add Product</NavLink></li>
+            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/addproduct">Add Product</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:bg-green-300 p-2 rounded-lg" : ""} to="/login">Login</NavLink></li>
+            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/login">Login</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:bg-green-300 p-2 rounded-lg" : ""} to="/register">Register</NavLink></li>
+            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/register">Register</NavLink></li>
     </>
     return (
-        <div className="bg-white">
+        <div className="">
             <div className="navbar  max-w-7xl mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -37,9 +37,9 @@ const NavBar = () => {
                     {/* <a className="btn btn-ghost normal-case text-xl">Event Management</a> */}
                     <div className="flex items-center gap-2">
                         <div>
-                            <GiCarWheel className="text-5xl"></GiCarWheel>
+                            <GiCarWheel className="text-5xl  text-[#66b2b2]"></GiCarWheel>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center font-medium">
                         <h1>Automotive</h1>
                         <h1>Excelencia</h1>
                         </div>
@@ -63,11 +63,11 @@ const NavBar = () => {
                                         <img src={user?.photoURL} />
                                     </div>
                                 </label>
-                                <button onClick={handleSignOut} className="btn bg-green-300 font-bold">Log Out</button>
+                                <button onClick={handleSignOut} className="btn bg-[#b2d8d8] font-bold">Log Out</button>
                             </div>
                             :
                             <Link to="/login">
-                                <button className="btn bg-green-500">Login</button>
+                                <button className="btn bg-[#b2d8d8]">Login</button>
                             </Link>
                     }
 

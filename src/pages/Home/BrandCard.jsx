@@ -3,7 +3,7 @@ const BrandCard = ({ singleBrand }) => {
     const { photo, brand } = singleBrand;
     return (
         <div>
-            <div className="card card-compact w-80 bg-base-100 shadow-xl h-[320px]">
+            <div className="card card-compact w-80 bg-[#b2d8d8] shadow-xl h-[320px]">
                <div className=" ">
                 <div className="">
                 <figure ><img src={photo} className="h-[240px] p-2" alt="Brands" /></figure>
