@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
-
+import { GiCarWheel } from "react-icons/gi";
 
 const NavBar = () => {
     const { user, logOut } = useContext(AuthContext);
@@ -35,7 +35,16 @@ const NavBar = () => {
                         </ul>
                     </div>
                     {/* <a className="btn btn-ghost normal-case text-xl">Event Management</a> */}
-                    <img className="h-1/2 w-1/2 md:h-[50px] md:w-[180px]" src="https://i.ibb.co/VW0HXqv/image.png" alt="" />
+                    <div className="flex items-center gap-2">
+                        <div>
+                            <GiCarWheel className="text-5xl"></GiCarWheel>
+                        </div>
+                        <div className="text-center">
+                        <h1>Automotive</h1>
+                        <h1>Excelencia</h1>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="flex gap-4 px-1">
@@ -44,8 +53,8 @@ const NavBar = () => {
 
                 </div>
                 <div className="navbar-end">
-                   
-                {
+
+                    {
                         user ?
                             <div className="flex items-center gap-3">
                                 <p className=" font-medium">{user?.displayName}</p>
@@ -61,7 +70,7 @@ const NavBar = () => {
                                 <button className="btn bg-green-500">Login</button>
                             </Link>
                     }
-                    
+
                 </div>
             </div>
         </div>
