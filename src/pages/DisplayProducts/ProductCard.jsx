@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ product }) => {
     const { _id, name, photo, description, type, price, rating, brand } = product;
@@ -10,9 +11,9 @@ const ProductCard = ({ product }) => {
                 <h2 className="text-xl">Type: {type}</h2>
                 <h2 className="text-xl">Rating: {rating}</h2>
                 <h2 className="text-xl">Price: {price}$</h2>
-                <div className="flex gap-2">
-                    <button className="btn w-1/2 bg-[#66b2b2] font-medium rounded-lg">Details</button>
-                    <button className="btn w-1/2 bg-[#66b2b2] font-medium rounded-lg">Update</button>
+                <div className="flex justify-around">
+                    <Link to={`/productdetails/${_id}`}><button className="btn  bg-[#66b2b2] font-medium rounded-lg  border-none">Details</button></Link>
+                    <Link><button className="btn  bg-[#66b2b2] font-medium rounded-lg border-none">Update</button></Link>
                 </div>
             </div>
         </div>
