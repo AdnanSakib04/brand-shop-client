@@ -18,6 +18,8 @@ const NavBar = () => {
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/addproduct">Add Product</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
+            isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/cart">My Cart</NavLink></li>
+        <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/login">Login</NavLink></li>
         <li><NavLink className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "text-black font-bold bg-base-200 lg:text-[#66b2b2] p-2 rounded-lg" : ""} to="/register">Register</NavLink></li>

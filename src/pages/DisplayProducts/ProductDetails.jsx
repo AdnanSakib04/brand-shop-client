@@ -1,4 +1,5 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { Link, useLoaderData, useParams } from "react-router-dom";
+import { FaCartShopping } from "react-icons/fa6";
 
 const ProductDetails = () => {
     const productData = useLoaderData();
@@ -20,6 +21,9 @@ const ProductDetails = () => {
                 </div>
 
                 <p className=" text-xl text-justify mb-10 font-semibold">{product.description}</p>
+                <div className="flex justify-center">
+                    <Link><button className="btn bg-[#66b2b2] border-none text-xl"> <FaCartShopping></FaCartShopping>Add to Cart</button></Link>
+                </div>
 
             </div>
         </div>

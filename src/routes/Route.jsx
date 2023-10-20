@@ -5,9 +5,10 @@ import Home from "../pages/Home/Home";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import AddProduct from "../pages/AddProduct/AddProduct";
-import DisplayProducts from "../pages/DisplayProducts/DisplayProducts";
+import DisplayProducts from "../pages/DisplayProducts/DisplayProduct";
 import PrivateRoute from "./PrivateRoute";
 import ProductDetails from "../pages/DisplayProducts/ProductDetails";
+import UpdateProduct from "../pages/DisplayProducts/UpdateProduct";
 
 
 const router = createBrowserRouter([
@@ -41,8 +42,13 @@ const router = createBrowserRouter([
       },
       {
         path: "/productdetails/:id",
-        element: <ProductDetails></ProductDetails>,
+        element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
         loader: () => fetch(`http://localhost:5000/products`)
+      },
+      {
+        path: "/updateproduct/:id",
+        element: <UpdateProduct></UpdateProduct>,
+        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
 
       },
     ],

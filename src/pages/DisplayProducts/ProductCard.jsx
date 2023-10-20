@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
                 <h2 className="text-xl">Price: {price}$</h2>
                 <div className="flex justify-around">
                     <Link to={`/productdetails/${_id}`}><button className="btn  bg-[#66b2b2] font-medium rounded-lg  border-none">Details</button></Link>
-                    <Link><button className="btn  bg-[#66b2b2] font-medium rounded-lg border-none">Update</button></Link>
+                    <Link to={`/updateproduct/${_id}`}><button className="btn  bg-[#66b2b2] font-medium rounded-lg border-none">Update</button></Link>
                 </div>
             </div>
         </div>
