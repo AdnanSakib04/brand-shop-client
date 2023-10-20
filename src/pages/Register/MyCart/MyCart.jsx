@@ -21,13 +21,15 @@ const MyCart = () => {
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 md:p-0  gap-y-6 mb-20 justify-items-center'>
               
           {
+            cartProducts.length ==0 ? ( <h1 className="text-3xl font-bold text-center my-40 text-red-700 mx-auto">Cart is empty</h1>)
+            :(
             cartProducts.map(cartProduct => <CartProductCard
                 key={cartProduct._id}
                 cartProduct={cartProduct}
                 cartProducts={cartProducts}
                 seCartProducts={seCartProducts}>
 
-            </CartProductCard>)
+            </CartProductCard>))
           }
         </div>
 
