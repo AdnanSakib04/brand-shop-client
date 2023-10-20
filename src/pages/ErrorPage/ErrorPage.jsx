@@ -7,7 +7,7 @@ const ErrorPage = () => {
         <h1 className="text-center mt-80 text-4xl font-black">Page not found!</h1>
 
        <div className="text-center mt-9">
-       <Link to={'/'}><div className="btn bg-green-600 text-white font-semibold rounded-lg border-none">go back to home  </div></Link>
+       <Link to={'/'}><div className="btn bg-[#66b2b2] text-white font-semibold rounded-lg border-none">go back to home  </div></Link>
        </div>
 
     </div>
