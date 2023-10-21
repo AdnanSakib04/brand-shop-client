@@ -10,7 +10,7 @@ const ExclusiveAdvantages = () => {
         
         <div>
             
-            <div className=" bg-[#b2d8d8] shadow-lg border mb-40 rounded-3xl max-w-7xl mx-auto mt-3">
+            <div className=" bg-[#b2d8d8] shadow-lg border mb-40 rounded-3xl max-w-7xl mx-auto mt-3 text-gray-950">
             <h1 className="mt-10 text-5xl font-bold text-center  max-w-max mx-auto p-3 rounded-lg">Exclusive Advantages</h1>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 p-6 md:p-0  gap-y-6 mb-20 mt-10 justify-items-center">

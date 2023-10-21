@@ -11,7 +11,7 @@ const BrandCard = ({ singleBrand }) => {
                             <figure ><img src={photo} className="h-[240px] p-2" alt="Brands" /></figure>
                         </div>
                         <div className="card-body">
-                            <h2 className="text-center text-3xl font-bold">{brand}</h2>
+                            <h2 className="text-center text-3xl font-bold text-gray-950">{brand}</h2>
 
                         </div>
                     </div>

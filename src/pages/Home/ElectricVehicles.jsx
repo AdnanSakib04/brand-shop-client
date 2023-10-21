@@ -8,7 +8,7 @@ import Marquee from "react-fast-marquee";
 
 const ElectricVehicles = () => {
     return (
-        <div className=" bg-gradient-to-r from-[#b2d8d8] to-gray-200 ... shadow-lg border mb-40 rounded-3xl max-w-7xl mx-auto mt-36">
+        <div className=" bg-gradient-to-r from-[#b2d8d8] to-gray-200 ... shadow-lg border mb-40 rounded-3xl max-w-7xl mx-auto mt-36 text-gray-950">
             <h1 className="mt-10 text-5xl font-bold text-center mb-10">We Are Also Selling <br /> Electric Vehicles</h1>
 
 

@@ -41,7 +41,7 @@ const ProductDetails = () => {
                 })
         }
     return (
-        <div className="max-w-7xl p-4 mx-auto mb-40 mt-8">
+        <div className="max-w-7xl p-4 mx-auto mb-40 mt-8 text-gray-950">
             <div className="   bg-[#b2d8d8] rounded-lg  p-3">
                 <img className="w-full lg:h-[700px]" src={product.photo} alt="" />
                 <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-5 mb-5 ">{product.name}</h2>
@@ -54,7 +54,7 @@ const ProductDetails = () => {
 
                 <p className=" text-xl text-justify mb-10 font-semibold">{product.description}</p>
                 <div className="flex justify-center">
-                    <button onClick={handleAddToCart} className="btn bg-[#66b2b2] border-none text-xl"> <FaCartShopping></FaCartShopping>Add to Cart</button>
+                    <button onClick={handleAddToCart} className="btn bg-[#66b2b2] border-none text-xl text-gray-950"> <FaCartShopping></FaCartShopping>Add to Cart</button>
                 </div>
 
             </div>
