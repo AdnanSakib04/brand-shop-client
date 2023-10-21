@@ -1,7 +1,8 @@
 import Swal from "sweetalert2";
+import { RiDeleteBinLine } from "react-icons/ri";
 
 
-const CartProductCard = ({cartProduct, cartProducts, seCartProducts}) => {
+const CartProductCard = ({ cartProduct, cartProducts, seCartProducts }) => {
     const { _id, name, photo, type, price, rating, brand } = cartProduct;
 
     const handleDelete = _id => {
@@ -42,19 +43,19 @@ const CartProductCard = ({cartProduct, cartProducts, seCartProducts}) => {
 
     return (
         <div className="card w-96 bg-[#b2d8d8] shadow-xl">
-        <figure><img src={photo} alt="" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">Name: {name}</h2>
-            <h2 className="text-xl">Brand: {brand}</h2>
-            <h2 className="text-xl">Type: {type}</h2>
-            <h2 className="text-xl">Rating: {rating}</h2>
-            <h2 className="text-xl">Price: {price}$</h2>
-            <div className="flex justify-around">
-                <button onClick={() => handleDelete(_id)} className="btn  bg-red-600 font-medium rounded-lg  border-none">Delete</button>
-                
+            <figure><img className="h-[213px] w-full" src={photo} alt="" /></figure>
+            <div className="card-body">
+                <h2 className="text-[22px] font-bold">Name: {name}</h2>
+                <h2 className="text-xl font-medium">Brand: {brand}</h2>
+                <h2 className="text-xl font-medium">Type: {type}</h2>
+                <h2 className="text-xl font-medium">Rating: {rating}</h2>
+                <h2 className="text-xl font-medium">Price: {price}$</h2>
+                <div className="flex justify-around">
+                    <button onClick={() => handleDelete(_id)} className="btn btn-circle bg-red-600 font-medium text-white  border-none text-xl font-extrabold"><RiDeleteBinLine></RiDeleteBinLine></button>
+
+                </div>
             </div>
         </div>
-    </div>
     );
 };
 
