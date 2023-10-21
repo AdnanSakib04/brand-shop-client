@@ -21,7 +21,7 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/brands')
       },
       {
         path: "/login",
@@ -38,24 +38,24 @@ const router = createBrowserRouter([
       {
         path: "/allproducts/:brand",
         element: <DisplayProducts></DisplayProducts>,
-        loader: ({params}) => fetch(`http://localhost:5000/brands/${params.brand}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/brands/${params.brand}`)
 
       },
       {
         path: "/productdetails/:id",
         element: <PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>,
-        loader: () => fetch(`http://localhost:5000/products`)
+        loader: () => fetch(`https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/products`)
       },
       {
         path: "/updateproduct/:id",
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/products/${params.id}`)
 
       },
       {
         path: "/cart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch('http://localhost:5000/cart')
+        loader: () => fetch('https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/cart')
 
       },
     ],

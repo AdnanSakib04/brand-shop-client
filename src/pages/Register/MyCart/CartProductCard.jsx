@@ -20,7 +20,7 @@ const CartProductCard = ({ cartProduct, cartProducts, seCartProducts }) => {
 
 
 
-                fetch(`http://localhost:5000/cart/${_id}`, {
+                fetch(`https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/cart/${_id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())

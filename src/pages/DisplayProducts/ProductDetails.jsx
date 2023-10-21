@@ -20,7 +20,7 @@ const ProductDetails = () => {
     
             console.log(cartProduct);
     
-            fetch('http://localhost:5000/cart', {
+            fetch('https://brand-shop-server-mdna9ww38-navids-projects-b76e6fb9.vercel.app/cart', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'
