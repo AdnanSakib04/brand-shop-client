@@ -63,9 +63,9 @@ const NavBar = () => {
                     {/* <a className="btn btn-ghost normal-case text-xl">Event Management</a> */}
                     <div className="flex items-center gap-2">
                         <div>
-                            <GiCarWheel className="text-5xl  text-[#66b2b2]"></GiCarWheel>
+                            <GiCarWheel className=" text-4xl md:text-5xl  text-[#66b2b2]"></GiCarWheel>
                         </div>
-                        <div className="text-center font-medium">
+                        <div className="text-center font-medium text-xs md:text-[16px]">
                             <h1>Automotive</h1>
                             <h1>Excelencia</h1>
                         </div>
