@@ -4,6 +4,9 @@
 live Link: [https://brand-shop-12c6f.web.app/](https://brand-shop-12c6f.web.app/)
 
 
+**Technologies Used:** React, MongoDB, DaisyUI, Firebase, Tailwind CSS
+
+
 **Project features are given below:** 
 - **Light/dark theme toggle:** Users can toggle between light and dark theme to enhance their experience.
 - **Cart:** Each user can see their added products on the cart page. User can login from any device to see their cart products. Cart products are added to database.
